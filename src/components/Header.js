@@ -27,13 +27,13 @@ const formatLinks = (allLinks) =>
       const isHome = key === 'home';
       return isHome
         ? {
-            ...acc,
-            home: value,
-          }
+          ...acc,
+          home: value,
+        }
         : {
-            ...acc,
-            links: [...acc.links, { name: capitalize(key), value }],
-          };
+          ...acc,
+          links: [...acc.links, { name: capitalize(key), value }],
+        };
     },
     { links: [], home: null },
   );
@@ -69,7 +69,7 @@ const Header = () => (
               name={name}
             />
           ));
-
+          console.log(allLinks);
           return (
             <Fragment>
               {homeLink}

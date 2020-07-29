@@ -34,6 +34,7 @@ const formatLinks = (allLinks) =>
           ...acc,
           links: [...acc.links, { name: capitalize(key), value }],
         };
+
     },
     { links: [], home: null },
   );

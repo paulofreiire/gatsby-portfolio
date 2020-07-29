@@ -29,6 +29,14 @@ const plugins = [
   },
   'gatsby-transformer-remark',
   'gatsby-plugin-offline',
+
+  {
+    resolve: 'gatsby-source-medium',
+    options: {
+      username: about.mediumUser || '@medium',
+    },
+  },
+
 ];
 
 if (ANALYTICS_ID) {
@@ -42,4 +50,8 @@ if (ANALYTICS_ID) {
 
 module.exports = {
   plugins,
+  siteMetadata: {
+    isMediumUserDefined: !!about.mediumUser,
+    deterministicBehaviour: !!DETERMINISTIC,
+  },
 };

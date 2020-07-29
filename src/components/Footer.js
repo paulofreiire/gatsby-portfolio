@@ -39,7 +39,7 @@ const Footer = () => (
   <StaticQuery
     query={graphql`
       query FooterQuery {
-        contentfulSobre {
+        contentfulAbout {
           name
           roles
           socialLinks {

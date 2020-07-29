@@ -46,7 +46,7 @@ const LandingPage = () => (
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {
-          contentfulSobre {
+          contentfulAbout {
             name
             roles
             socialLinks {

@@ -181,7 +181,7 @@ const Projects = () => (
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
-          contentfulSobre {
+          contentfulAbout {
             projects {
               id
               name

@@ -47,7 +47,7 @@ const About = () => (
     <StaticQuery
       query={graphql`
         query AboutMeQuery {
-          contentfulSobre {
+          contentfulAbout {
             aboutMe {
               childMarkdownRemark {
                 rawMarkdownBody

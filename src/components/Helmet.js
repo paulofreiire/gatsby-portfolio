@@ -8,7 +8,7 @@ const Helmet = ({ theme = {} }) => (
   <StaticQuery
     query={graphql`
       query HelmetQuery {
-        contentfulSobre {
+        contentfulAbout {
           name
           description
           profile {

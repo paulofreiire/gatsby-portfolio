@@ -69,7 +69,7 @@ const Header = () => (
               name={name}
             />
           ));
-          console.log(allLinks);
+
           return (
             <Fragment>
               {homeLink}
